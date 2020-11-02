@@ -1,0 +1,27 @@
+mvn package ：打包，等价与compile+test+生产jar包
+mvn test ： 对测试文件main目录下的文件进行编译
+mvn compile ： 对main目录下的文件进行编译
+mvn install ： 将生成的jar包放置入本地目录，即本地安装
+mvn clean ： 清除编译后的项目文件
+install=package+本地安装=test+生产jar包+本地安装=compile+test目录下的文件编译+生产jar包+本地安装
+package=test+生产jar包=compile+test目录下的文件编译+生产jar包
+test=compile+test目录下的文件编译
+mvn site ： 产生site
+mvn test-compile ： 编译测试代码
+mvn archetype:generate ： 反向生成项目的骨架
+mvn jar ： 生成jar包
+mvn eclipse:eclipse ： 生成eclipse项目
+mvn idea:idea ： 生成idea项目
+mvn -Dtest package ： 只打包不测试
+mvn test -skipping comiple ： 只测试不编译
+mvn dependency:list ： 查看当前项目已被解析的依赖
+mvn deploy ： 上传到私服
+mvn source:jar ： 源码打包
+mvn -e ： 显示详细错误信息
+mvn validate ： 验证工程是否正确
+mvn jetty:run ： 运行项目于jetty上
+Maven库：https://mvnrepository.com/tags/maven
+Maven修改本地仓库：
+地址中不要含有中文
+<localRepository>安装的目录/repository</localRepository>
+
